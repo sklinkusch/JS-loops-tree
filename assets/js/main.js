@@ -1,11 +1,13 @@
-function TreeAsterisks(max) {
-  let row = "";
-  let total = "";
-  for (let x = 1; x <= max; x++) {
-    row = row + "*";
-    total = total + row + "<br>";
-    console.log(row);
+//
+
+function TreeAsterisks2(max) {
+  let stars = "";
+  for (let i = 1; i < max; i++) {
+    for (let j = 0; j < i; j++) {
+      stars += "*";
+    }
+    stars += "<br>";
   }
-  document.getElementById("asterisks").innerHTML = total;
+  return stars;
 }
-TreeAsterisks(20);
+document.getElementById("asterisks").innerHTML = TreeAsterisks2(20);

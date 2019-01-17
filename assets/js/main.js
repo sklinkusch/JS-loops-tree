@@ -6,7 +6,7 @@ function TreeAsterisks2(max) {
     for (let j = 1; j <= i; j++) {
       stars += "*";
     }
-    stars += "<br>";
+    stars += "<br>"; // "\n" for the console
   }
   return stars;
 }
